@@ -42,13 +42,17 @@
         git restore .<br>
 
         Case 2. if changes were added using git add .. then type:<br>
-        git restore --cached .<br>
+        git restore --staged .<br>
         it will remove it form staged Then use the Case 1 to restore back to main.
          <br>
         Case 3:Added changess to staging are (didn't commit) after this added more changes to file:<br>
         To get the staged changes;<br>
         git restore --wokrtree index.html<br>
 
+        Case 4:When mistake is comitted: To revert back <br>
+        git reset --soft HEAD^ (uncommit and keep the changes)<br>
+        or<br>
+        git reset --hard HEAD^ (uncommit and discard the changes)<br>
         
 
         
