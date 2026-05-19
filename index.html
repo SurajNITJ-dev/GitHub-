@@ -30,24 +30,24 @@
     9. To check who has commited :<br>
         7.git log<br>
         it will show the author github id with time of commitment<br>
-    10. To check the previous version:
-        8. git log (will show you the commit id of all version)
-        9. git show [paste the commit id of the version to be fetched]:_file_name_
-    11. To switch version:
-        10. git checkout _commit id of switching version_ -- _us file se kya chahiye for example ek file chahiye index.html ya * for all files_
-    12. To return to main verison:
-        git checkout main -- *
-    13. If we made some unnecessary changes by mistake:
-        Case 1. changes not added using git add.. to restore back to main version type:
-        git restore .
+    10. To check the previous version:<br>
+        8. git log (will show you the commit id of all version)<br>
+        9. git show [paste the commit id of the version to be fetched]:_file_name_<br>
+    11. To switch version:<br>
+        10. git checkout _commit id of switching version_ -- _us file se kya chahiye for example ek file chahiye index.html ya * for all files_<br>
+    12. To return to main verison:<br>
+        git checkout main -- *<br>
+    13. If we made some unnecessary changes by mistake:<br>
+        Case 1. changes not added using git add.. to restore back to main version type:<br>
+        git restore .<br>
 
-        Case 2. if changes were added using git add .. then type:
-        git restore --cached .
+        Case 2. if changes were added using git add .. then type:<br>
+        git restore --cached .<br>
         it will remove it form staged Then use the Case 1 to restore back to main.
-         
-        Case 3:Added changess to staging are (didn't commit) after this added more changes to file:
-        To get the staged changes;
-        git restore --wokrtree index.html
+         <br>
+        Case 3:Added changess to staging are (didn't commit) after this added more changes to file:<br>
+        To get the staged changes;<br>
+        git restore --wokrtree index.html<br>
 
         
 
