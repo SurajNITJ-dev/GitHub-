@@ -85,39 +85,60 @@
         if you made changes directly on github insted of local and after want keep track on local, use :<br>
         1. git pull<br>
     17. Cloning the repository:<br>
-        if another member want to get the file to work on, so he needs all those file, for this he will go to git hub and search for the repo <br>that we made public, where he will find the code: copy the repo URL, and type following command on the terminal:<br>
+        if another member want to get the file to work on, so he needs all those file, for this he will go to git hub and search for the repo <br>
+        that we made public, where he will find the code: copy the repo URL, and type following command on the terminal:<br>
              1. git clone<br>
         this will copyt all the files on the system allong with all the versions :<br>
 
 
     18. Branching and merging:
-        now other member to contribute in the main project,so to work parallely on the same project, without hampering the current version, there is a need of branching, where different features have different branches to work on simultaneously without stepping on each other's toes. To create new breanch type following command:
-            1. git branch new_branch (for example git brach design it will create a new branch)
-        Now to swithch on new branch use:
-            2. git checkout new_branch (example git checkout design)
-            you can check the current branch via 
-            3. git branch 
-        Now push that branch to public repo:
-            4. git push -u origin design
+        now other member to contribute in the main project,so to work parallely on the same project, without hampering the current version,<br>
+        there is a need of branching, where different features have different branches to work on simultaneously without stepping on each other's toes. <br>
+        To create new breanch type following command:<br>
+            1. git branch new_branch (for example git brach design it will create a new branch)<br>
+        Now to swithch on new branch use:<br>
+            2. git checkout new_branch (example git checkout design)<br>
+            you can check the current branch via <br>
+            3. git branch <br>
+        Now push that branch to public repo:<br>
+            4. git push -u origin design<br>
         
-        To merge other branch(design branch to main branch):
-            1. first go to main branch 
-            2. Now merge the design branch with the main:
-                1. git merge design
-            After merging the design, now its time to push all the changes commited on local, use the following command:
-                2. git push origin design
-        #Now navigate to your github page thorugh your browser,
-            1. check the the branch option,
-            2. you will find only main branch because till the first point we havent pushed the changes.
-            3. After pushing chnages to desing branch, its will be visible on brach tab.
-            4. if you navigate to insight tab before pushing changes to desing branch, you will only see a single arrow with no other branching emerging out.
-            5. After push of new changes to design branch you will be able to see a new blue branch emerging out from main branch..6. on the code tab you will find the compare and pull request. you can directly compare and merge pull request on the site, and then.
-            7. come to main branch and then generate a pull request.
+        To merge other branch(design branch to main branch):<br>
+            1. first go to main branch <br>
+            2. Now merge the design branch with the main:<br>
+                1. git merge design<br>
+            After merging the design, now its time to push all the changes commited on local, use the following command:<br>
+                2. git push origin design<br>
+        #Now navigate to your github page thorugh your browser,<br>
+            1. check the the branch option,<br>
+            2. you will find only main branch because till the first point we havent pushed the changes.<br>
+            3. After pushing chnages to desing branch, its will be visible on brach tab.<br>
+            4. if you navigate to insight tab before pushing changes to desing branch, you will only see a single arrow with no other branching emerging out.<br>
+            5. After push of new changes to design branch you will be able to see a new blue branch emerging out from main branch..6. on the code tab you will <br>
+               find the compare and pull request. you can directly compare and merge pull request on the site, and then.<br>
+            7. come to main branch and then generate a pull request.<br>
     
-        #Merge Conflict:
-            when two persons applying changes on same position in file from different branches, this leads to conflicts between two changes : git will ask you to accept one of them or accept both where VS code try to simplify this conflict by proposing one change by taking intersection of both changes:
-            Then chose one of the changes and then commit the change to design branch:
-                git commit
+        #Merge Conflict:<br>
+            when two persons applying changes on same position in file from different branches, this leads to conflicts between two changes : 
+            git will ask you to accept one of them or accept both where VS code try to simplify this conflict by proposing one change by taking intersection of both changes:<br>
+            Then chose one of the changes and then commit the change to design branch:<br>
+                git commit<br>
+                git push
+
+    19. Git Forking And Pull Request:
+        git provides user a feature to contribute to other's project and is known as forking, for a user to contribute to some project follow these setep:
+        1. first go to git repo which you want to contribute;
+        2. there you see Fork option right above the code button:
+        3. click on fork and strat editing as you will get a copy of main branch:
+        4. after doing your contribution/editing to the project commit the changes.
+        5. come back to repo page, there you will find a "Contribute option".
+        6. on clicking contribute button, you will se generate a pull request option:
+        7. click on pull request and after verifying the changes click on cereate pull request:
+        
+        
+        
+
+        
 
 
         
