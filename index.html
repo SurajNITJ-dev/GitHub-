@@ -145,8 +145,30 @@
         2. open the .gitignore file and write the names of file with its extension like .log in that .gitignore file.
         3. Now check git status, where you will see only .gitignore will be show for commit. it states that it is ignoring those file added in .gitignore file.
         4. add the .gitignore file, commit it and push it.
-        
-        
+        5. the advantage is that when some clone this repo, and create similar files like .log or secret.json at that stage these files will be ignored as well.
+    21. Git Clean:
+        This feature of git helps us to remove unused and untracked files.
+        just simply follow these commands:
+            1. git clean -n 
+            ,this command first warns you about files to be deleated.
+            2. git clean -f
+            Thsi command removes all untracked files putting a cross line on the files.
+
+    22. Git Tag:
+        This feature of git allows you to give name to your long commit ids.Lets check how does it helps:
+            1. To tag latest commit use:
+                git tag -a tag_name -m "Message about your tag"
+            2. To tag older commits:
+                1. get the commit id to tag
+                -->git log
+                2. run this command:
+                -->git tag -a tag_name _paste the commit id here_ "commit message"
+            3. To delete a tag:
+                -->git tag -d <tag_no>
+            4. All these tags are local to move it to remote repo:
+                -->git push origin --tags(for all tags together)
+            5. Go to remote repo and check the tags sections,there you will see your all tags and releases.
+            
 
         
 
